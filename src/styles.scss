@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@material/card";
+@use "@material/layout-grid/mdc-layout-grid";
+@use "@material/button/styles";
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+
+@include textfield.core-styles;
+@include card.core-styles;
+
+html,
+body {
+  height: 100%;
+  background-color: #e9ecef78;
+
+}

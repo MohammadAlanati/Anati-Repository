@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="mdc-card my-card">
+    <div class="mdc-card__primary-action">
+      <div class="my-card-content">
+        <img src="https://avatars.githubusercontent.com/u/124091983" alt="Logo" />
+      </div>
+    </div>
+    <div class="card-body mdc-typography--body2">
+   
+      <div class="material-textfield">
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"/>
+        <label>Email</label>
+        <br>
+        <span class="error" id="emailError"></span><br>
+       </div>
+
+      <div class="material-textfield">
+        <input
+        type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one number." required />
+        <label>Password</label>
+        <br>
+        <span class="error" id="passError"> </span><br>
+       </div>
+   
+      <div class="mdc-card__actions">
+        <button class="mdc-button mdc-button--raised" type="submit"  >
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Login</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
